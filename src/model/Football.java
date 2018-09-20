@@ -5,7 +5,8 @@ public class Football
 	//-------------Declaration Section------------------------
 	private int timeMinutes;
 	private int timeSeconds;
-	private int score;
+	private int scoreHome;
+	private int scoreAway;
 	private String teamName;
 	private String against;
 	private int quarter;
@@ -18,7 +19,7 @@ public class Football
 	
 	public Football()
 	{
-		
+		//default constructor
 	}
 	public Football(String name)
 	{
