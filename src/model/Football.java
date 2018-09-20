@@ -45,5 +45,96 @@ public class Football
 	}
 	
 	
-
+	public int getTimeMinutes()
+	{
+		return timeMinutes;
+	}
+	public int getTimeSeconds()
+	{
+		return timeSeconds;
+	}
+	public int getScoreHome()
+	{
+		return scoreHome;
+	}
+	public int getScoreAway()
+	{
+		return scoreAway;
+	}
+	public String getTeamName()
+	{
+		return teamName;
+	}
+	public String getAgainst()
+	{
+		return against;
+	}
+	public int getQuarter()
+	{
+		return quarter;
+	}
+	public int getBallPos()
+	{
+		return ballPos;
+	}
+	public int getDown()
+	{
+		return down;
+	}
+	public int getYardsFirstDown()
+	{
+		return yardsFirstDown;
+	}
+	public boolean getHasBall()
+	{
+		return hasBall;
+	}
+	public void setTimeMinutes(int min)
+	{
+		this.timeMinutes = min;
+	}
+	public void setTimeSeconds(int sec)
+	{
+		this.timeSeconds = sec;
+	}
+	public void setScoreHome(int scoreHome)
+	{
+		this.scoreHome = scoreHome;
+	}
+	public void setScoreAway(int scoreAway)
+	{
+		this.scoreAway = scoreAway;
+	}
+	public void setTeamName(String nameTeam)
+	{
+		this.teamName = nameTeam;
+	}
+	public void setAgainst(String against)
+	{
+		this.against = against;
+	}
+	public void setQuarter(int quarter)
+	{
+		this.quarter = quarter;
+	}
+	public void setBallPos(int ball)
+	{
+		this.ballPos = ball;
+	}
+	public void setDown(int down)
+	{
+		this.down = down;
+	}
+	public void setYardsFirstDown(int first)
+	{
+		this.yardsFirstDown = first;
+	}
+	public void setHasBall(boolean hasBall)
+	{
+		this.hasBall = hasBall;
+	}
+	
+	
+	
+	
 }
