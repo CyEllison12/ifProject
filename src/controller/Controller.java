@@ -18,6 +18,9 @@ public class Controller
 		String userInput = JOptionPane.showInputDialog("What is your teams name?");
 		userTeam.setTeamName(userInput);
 		
+		userInput = JOptionPane.showInputDialog("What team are you playing against?");
+		userTeam.setAgainst(userInput);
+		
 		userInput = JOptionPane.showInputDialog("What quarter is it?");
 		int quarter = 0;
 		if(validInt(userInput))
@@ -34,6 +37,16 @@ public class Controller
 		}
 
 		userTeam.setQuarter(quarter);
+		
+		userInput = JOptionPane.showInputDialog("How many minutes are left?");
+		int min = 0;
+		if(validInt(userInput))
+		{
+			
+		}
+		userTeam.setTimeMinutes(userInput);
+		
+		
 		
 	}
 	public boolean validInt(String maybeInt)
