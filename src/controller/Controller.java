@@ -11,10 +11,14 @@ public class Controller
 	}
 	public void start()
 	{
+		boolean isFinished = true;
 		JOptionPane.showMessageDialog(null, "You will enter in all the info for your team during a game!"
 				+ "\nAll your info will be shown at the end!"
 				+ "\nPlease enter in the right variables! If you don't it wont work!");
 		
+		
+		while(isFinished == true)
+		{
 		String userInput = JOptionPane.showInputDialog("What is your teams name?");
 		userTeam.setTeamName(userInput);
 		
@@ -115,10 +119,24 @@ public class Controller
 											+ "\nDown: " + userTeam.getDown()
 											+ "\nYards to first down: " + userTeam.getYardsFirstDown()
 											+ "\nDoes " + userTeam.getTeamName() + " have the ball: " + userTeam.getHasBall());
+		
+		
 
-		
-		
-		
+		userInput = JOptionPane.showInputDialog(null, "Would you like to try again? (True/False)\n(Anything other then True will result in false)");
+		while(!validBool(userInput))
+		{
+			userInput = JOptionPane.showInputDialog(null, "Would you like to try again? (True/False)\n(Anything other then True will result in false)");
+		}
+		isFinished = validBool(userInput);
+		if(isFinished == true)
+		{
+			isFinished = false;
+		}
+		else
+		{
+			isFinished = true;
+		}
+		}
 		
 		
 
@@ -141,7 +159,8 @@ public class Controller
 		return isValid;
 	}
 
-public boolean validBool(String maybeInt)
+	public boolean validBool(String maybeInt)
+
 {
 	
 	boolean isValid = false;
@@ -157,4 +176,19 @@ public boolean validBool(String maybeInt)
 	}
 	return isValid;
 }
+
+
+	public String toString()
+	{
+		String description = "";
+		description += "";
+		return description;
+	}
+
+
+
+
+
+
+
 }
