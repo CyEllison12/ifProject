@@ -144,7 +144,7 @@ public class Controller
 
 		}
 		
-		//Outputs how many times thay have tried (only after they have finished)
+		//Outputs how many times that have tried (only after they have finished)
 		JOptionPane.showMessageDialog(null, "You entered info " + count + " times.");
 		
 		
